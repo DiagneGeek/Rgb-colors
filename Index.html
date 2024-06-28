@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Titre de la page</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <p class="logo">
+       <span>r</span>
+       <span>g</span>
+       <span>b</span>
+       <span>C</span>
+       <span>o</span>
+       <span>l</span>
+       <span>o</span>
+       <span>r</span>
+       <span>s</span>
+     
+<svg onclick="affstory()" class="searchicon"xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+</svg>       
+
+
+   </p>
+ 
+ <div id="div"><p>Appuyez ici</p></div>
+ 
+ <div class="search">
+ <h1 onclick="sorti()">×</h1>
+     <div class="story">
+     
+     <span><svg class="searchicon2"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+  <path fill-rule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clip-rule="evenodd" /></span>
+
+</svg> 
+     </div>
+     
+ </div>
+   
+</div>
+
+ <footer style="position:absolute;top: 70%;z-index:-2;color: rgba(108,77,223);">
+ Appuyer sur le box et copier pour utiler un font
+ </footer>
+ 
+ <script src="app.js"></script>   
+ 
+ <script>
+ let search = document.querySelector(".search");
+ function affstory() {
+     search.style.top="0";
+ }
+ function sorti() {
+     search.style.top="100%";
+ }
+ </script>
+ 
+</body>
+</html>
