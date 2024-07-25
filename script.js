@@ -1,9 +1,7 @@
 let div = document.getElementById("div");
 let logo = document.querySelectorAll("span");
 let story = document.querySelector(".story");
-let input = document.querySelector(".searchbar");
 
-let s = false;
 let a;
 let b;
 let c;
@@ -37,7 +35,7 @@ div.addEventListener("click", () => {
    stocolor.className="color";
    storie.appendChild(stocolor);
    storie.className="stories"
-   //let storie = document.querySelectorAll("section")
+
    storie.addEventListener("click", () => {
  navigator.clipboard.writeText(storie.textContent)
     })
@@ -45,22 +43,12 @@ div.addEventListener("click", () => {
 });
  let storie = document.querySelectorAll("section")
 function save() { 
-localStorage.setItem("a", story.innerHTML);
+localStorage.setItem("saveCollection", story.innerHTML);
     }
 
 function save2() {
-   story.innerHTML=localStorage.getItem("a");
+   story.innerHTML=localStorage.getItem("saveCollection");
   
 }
 
 save2(); 
-s=true;
-let blues =document.querySelector(".blue");
-let searchicon = document.querySelector(".searchicon2");
-function searchcolor() {
-  if(input.value == "Blue" || input.value == "Bleu") {
-     blues.style.top="19%"
-     
-  }
-}
-searchicon.onclick=searchcolor;
