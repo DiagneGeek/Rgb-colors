@@ -21,12 +21,8 @@ div.addEventListener("click", () => {
    b = Math.floor(Math.random() * 256);
    c = Math.floor(Math.random() * 256);
    newcolor = `${a},${b},${c}`;
-   let ds=document.querySelector("#div p")
    div.style.background=`rgba(${newcolor})`;
-   ds.innerHTML=`<span style='color: blue;'>rgba</span>(${newcolor})`;
-   ds.addEventListener("click", (e) => {
-    navigator.clipboard.writeText(ds.textContent)
-   })
+   
    let storie=document.createElement("section");
    storie.innerHTML=`<span style='color: blue;'>rgba</span>(${newcolor})`;
    story.append(storie);
