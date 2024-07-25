@@ -1,4 +1,4 @@
-let div = document.getElementById("div");
+let div = document.getElementById("#div");
 let logo = document.querySelectorAll("span");
 let story = document.querySelector(".story");
 
