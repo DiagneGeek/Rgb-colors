@@ -2,21 +2,45 @@
     margin: 0;
     padding: 0;
 }
-html{
+body{
     width: 54vh;
     height: 98vh;
     position: absolute;
     top: 0%;
     overflow:hidden ;   
-    background:rgba(249,241,251);
-    font-family: "Butcherman", system-ui;
+    background:#1a1a1a;
+    font-family:inter;
+    &::before{
+      content:"";
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      background:radial-gradient(#ff8955,#154dff,#00b4d8);
+      position:absolute ;
+      top: 50%;
+      right: 40%;
+      filter:blur(60px);
+      z-index:-5;
+    }
+      &::after{
+      content:"";
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      background:radial-gradient(#ff8955,#154dff,#00b4d8);
+      position:absolute ;
+      top: 10%;
+      right: 10%;
+      filter:blur(60px);
+      z-index:-5;
+    }
 }
 #div{
-    width: 300px;
-    height: 200px;
-    box-shadow:0.4vh 0.5vh 0.9vh;
+    width: 95%;
+    height: 300px;
+    box-shadow:0.4vh 0.5vh 0.9vh white;
     position: absolute;
-    left: 25px;
+    left: 2.5%;
     top: 100px;
     color:black;
     Font-size:27px;    
@@ -25,34 +49,24 @@ html{
     align-items:center ;
     justify-content:center ;
     transition:all 0.5s ease ;
-    font-family:"Modern Antiqua", serif;
+    font-family:inter, serif;
 }
-#div:hover{
-  animation:a1 0.6s;
-}
-@keyframes a1{
-    0%{transform:scale(0.7);}
-    70%{transform:scale(1.1);}
-}
+
 #div p{
-    width: 100%;
-    height: 50px;
-background: linear-gradient(to right,gray,black);
-     position: absolute;
-     top: 120%;
      Font-size:25px;
-     text-align:center ;
-     color:white;
+     color:transparent;
+     -webkit-background-clip:text ;
+ background-image:linear-gradient(to right,#15b6ff,#120625)
 }
 .logo{
     font-weight:999 ;
     Font-size:27px;
-    background: white;
+    background:none;
     border-radius:8px;
     border:solid blue;
-    width: 310px;
+    width: 95%;
     padding-left: 16px;
-    margin: 28px 12px;
+    margin: 28px 0%;
     letter-spacing:-3px;
     -webkit-user-select:none;
     display:flex;align-items:center ;
@@ -60,11 +74,12 @@ background: linear-gradient(to right,gray,black);
 .logo span{transition:0.5s;font-family:"Modern Antiqua", serif;}
 
 .searchicon{
-    width: 25px;
-    height: 50px;
-    position: relative;
-    left: 50%;
-    Font-size:6vh;
+    position: absolute;
+    top: 5%;
+    right: 7%;
+    Font-size:3vh;
+    color: #bdbdbd;
+    text-decoration:underline;
 }
 .search{
     width: 354px;
@@ -76,22 +91,22 @@ background: linear-gradient(to right,gray,black);
 }
 .story{
     width: 354px;
-    height: 70%;
+    height: 88%;
     border-radius:14px 14px 0 0;
-    background: white;
+    background:linear-gradient(#181818,#0086c7);
     border:solid rgba(45,103,190);
     position: relative;
-    top: 24%;
+    top: 7%;
     overflow-y:auto;
     overflow-x:hidden ;
-   box-shadow:2vh 5vh 0.9vh rgba(45,103,190);
 }
 .search h1{
     Font-size:55px;
     font-weight:40;
     position: absolute;
-    top: 16%;
+    top: -2%;
     right: 3%;
+    color: #b4b4b4;
 }
 .searchbar{
     width: 295px;
@@ -131,48 +146,6 @@ background: linear-gradient(to right,gray,black);
     box-shadow:0.4vh 0.5vh 0.9vh;
 }
 .color{
-    width: 140px;
-    height: 68px;
-    border-radius: 12px;
-    position: absolute;
-    right: 0%;
-    top: 0;
-    box-shadow:0.9vh 0.9vh 0.9vh black;
-}
-
-.blue{
-    width: 354px;
-    height: 520px;
-    border-radius:14px 14px 0 0;
-    background: white;
-    border:solid rgba(45,103,190);
-    position: absolute;
-    top: 102%;
-    left:0%;
-    overflow-y:auto;
-    overflow-x:hidden ;
-    z-index:50;
-    transition:0.3s ;
-    box-shadow:2vh 5vh 0.9vh rgba(45,103,190);
-}
-.blue section{
-     width: 290px;
-    height: 70px;
-    border-radius: 20px 12px 12px 20px;
-    background: #061025;
-    position: relative;
-    top: 12%;
-    margin-top: 2vh;
-    margin-left: 20px;
-    padding-left: 10px;
-    color:white;
-    Font-size:16px;
-    border:solid 2px black;
-    display:flex ;   
-    align-items:center ;
-    box-shadow:0.4vh 0.5vh 0.9vh;
-}
-.b1 div{
     width: 140px;
     height: 68px;
     border-radius: 12px;
