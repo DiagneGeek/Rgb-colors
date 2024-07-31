@@ -69,9 +69,9 @@ body{
     margin: 28px 0%;
     letter-spacing:-3px;
     -webkit-user-select:none;
-    display:flex;align-items:center ;
+    display:flex;align-items:center;
 }
-.logo p span{transition:0.5s;font-family:"Modern Antiqua", serif;}
+.logo h2 span{transition:0.5s;font-family:"Modern Antiqua", serif;}
 
 .searchicon{
     position: absolute;
