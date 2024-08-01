@@ -34,7 +34,7 @@ body{
       z-index:-5;
     }
 }
-#div{
+.canvas{
     width: 100%;
     height: 500px;
     box-shadow:0.4vh 0.5vh 0.9vh white;
@@ -50,7 +50,7 @@ body{
     font-family:inter, serif;
 }
 
-#div p{
+.canvas p{
      Font-size:25px;
      color:transparent;
      -webkit-background-clip:text ;
