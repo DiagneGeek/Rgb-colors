@@ -4,6 +4,7 @@
 }
 body{
     height: 100svh;
+    width:100%;
     position: absolute;
     top: 0%;
     overflow:hidden ;   
