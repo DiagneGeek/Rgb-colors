@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RLEJLCTVH4"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RLEJLCTVH4"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -20,107 +19,49 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="Style.css">
 <link rel="icon" type="image/jpeg" href="https://www.google.com/search?client=ms-android-samsung-gj-rev1&sca_esv=8e02cda97bf2a14d&sxsrf=ADLYWIKWNaskQZo7-4CYwhoeMFvzjY_kxw:1721876844093&q=couleurs&udm=2&fbs=AEQNm0CbCVgAZ5mWEJDg6aoPVcBgTlosgQSuzBMlnAdio07UCId2t1azIRgowYJD0nDbqEJ5bV3WP_XXpqz0mjcvgnZ1h3peItx0P1c-98idu9LxPHWHDemro3hTLfo2hAMeT1HhlWOz8HsCeffB48MfEFJ3BzSwyhBDF5KwazpgXqy-07GEhU8uBMeb52Rt-SDck_VrZn-pLzg81ODEMTfTrTqF-gG9mw&sa=X&ved=2ahUKEwj1l46Nm8GHAxV5TKQEHU15AIcQtKgLegQIGxAB&biw=360&bih=661&dpr=2#vhid=1L5ebthPAQhSlM&vssid=mosaic">
-
-    
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSQ446LH"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+height="0" width="0" style="display:none;visibility:hidden" ></iframe></noscript>
+<!-- End Google Tag Manager -->
+
+
+
+
+    <div class="copyMessage">copied!</div>   
+    
+    
+   <header class="header">
+       
+     <p class="title"><span>rgbacolors</span></p>
+     
+       <div class="links">
+           <div class="scroll-indicator"></div>
+    
+     <button class="generate-link active">generate</button>
+     <button class="collections-btn">collections</button>
+       </div>
+            
+   </header>
    
-   <p class="logo">
-       <h2>
-       <span>r</span>
-       <span>g</span>
-       <span>b</span>
-       <span>a</span>
-       <span>C</span>
-       <span>o</span>
-       <span>l</span>
-       <span>o</span>
-       <span>r</span>
-       <span>s</span>
-       </h2>
-<p onclick="affstory()" class="searchicon">collection</p>       
-
-
    
+ <section class="generate">
+    <div class="canvas"><p>rgba(255,255,255)</p></div>
+    
+     <div class="btns">
+    <button class="generate-btn">generate</button>
+    <button class="add-in-coll">add in a collection</button>
+    <button class="copy-btn">
+      <img src="copyIcon.png" alt="copy">
+    </button>
+    </div>
+
+</section>
  
- <div id="div" class="canvas">
-     <p>Appuyez ici!</p>
- </div>
  
- <div class="search">
- <h1 onclick="sorti()">×</h1>
-     <div class="story">
-     </div>
-   
-</div>
-
- <p style="position:absolute;top: 70%;z-index:-2;color: #d1d1d1;">
- Appuyer sur le box et copier pour utiler un font
- </p>
-<!--  sorry but the js don't work when it is in a file .js-->
- <script>
-   let search = document.querySelector(".search");
- function affstory() {
-     search.style.top="0";
- }
- function sorti() {
-     search.style.top="100%";
- }
+ <div class="collectionsContainer"></div>
  
- let div = document.getElementById("div");
-let logo = document.querySelectorAll("span");
-let story = document.querySelector(".story");
-
-let a;
-let b;
-let c;
-let newcolor;
-function newcolorlogo() {
-for(let i=0;i<logo.length; i++){
-  let x = Math.floor(Math.random() * 256);
-  let y = Math.floor(Math.random() * 256);
-  let z = Math.floor(Math.random() * 256);
-  let newcolo = `${x},${y},${z}`;
-   logo[i].style.color=`rgba(${newcolo})`;
-}}
-setInterval(newcolorlogo, 2000)
-
-div.addEventListener("click", () => {
-   a = Math.floor(Math.random() * 256);
-   b = Math.floor(Math.random() * 256);
-   c = Math.floor(Math.random() * 256);
-   newcolor = `${a},${b},${c}`;
-   div.style.background=`rgba(${newcolor})`;
-   let storie=document.createElement("section");
-   storie.innerHTML=`<span style='color: blue;'>rgba</span>(${newcolor})`;
-   story.append(storie);
-   let stocolor=document.createElement("div");
-   stocolor.style.background=`rgba(${newcolor})`;
-   stocolor.className="color";
-   storie.appendChild(stocolor);
-   storie.className="stories"
-
-   storie.addEventListener("click", () => {
- navigator.clipboard.writeText(storie.textContent)
-    })
-   save();
-});
- let storie = document.querySelectorAll("section")
-function save() { 
-localStorage.setItem("saveCollection", story.innerHTML);
-    }
-
-function save2() {
-   story.innerHTML=localStorage.getItem("saveCollection");
-  
-}
-
-save2(); 
- </script>   
- 
+ <script src="script.js"></script>   
 </body>
 </html>
