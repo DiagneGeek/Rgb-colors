@@ -18,7 +18,7 @@ generateBtn.addEventListener("click", () => {
    let newcolor = `${r},${g},${b}`;
    
    let rgbText = document.querySelector(".canvas p");
-   canvas.style.background=`rgba(${newcolor})`;
+   canvas.style.background=`rgb(${newcolor})`;
    rgbText.innerHTML=`<span style='color: blue;'>rgba</span>(${newcolor})`;
 });
 
