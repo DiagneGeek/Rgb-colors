@@ -8,9 +8,7 @@
  }
 body{
     width: 100%;
-    position: absolute;
-    top: 0%;
-    overflow:hidden ;   
+    height:130svh;
     background:#1a1a1a;
     font-family:inter;
     &::before{
