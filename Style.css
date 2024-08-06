@@ -8,7 +8,6 @@
  }
 body{
     width: 100%;
-    height:1300px;
     position: absolute;
     top: 0%;
     overflow:hidden ;   
@@ -100,7 +99,7 @@ width: 100%;
 height: 90svh;
 .canvas{
     width: 100%;
-    height: 80svh;
+    height: 100%;
     box-shadow:0.4vh 0.5vh 0.9vh white;
     color:black;
     Font-size:27px;    
@@ -125,7 +124,7 @@ height: 90svh;
    grid-template-columns: 3fr 2fr 1fr;
    grid-gap: 9px;
    position: absolute;
-   top: 100svh;
+   top: 90svh;
    button{
        color:white;
        border:solid 2px #7b55ff;
