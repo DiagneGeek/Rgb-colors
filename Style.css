@@ -4,6 +4,7 @@
     box-sizing:border-box ;
     outline:none;
     border:none;
+    font-size:2.4svh;
  }
 body{
     width: 100%;
@@ -81,7 +82,7 @@ body{
      }
      .scroll-indicator{
          height: 2px;
-         width: 80px;
+         width: 5svh;
          background: linear-gradient(to right,
             #a42bff,#2b82ff);
          position: absolute;
@@ -96,10 +97,10 @@ body{
 .generate 
 {/* --------- generate part ----------- */
 width: 100%;
-height: 100%;
+height: 90svh;
 .canvas{
     width: 100%;
-    height: 100%;
+    height: 80svh;
     box-shadow:0.4vh 0.5vh 0.9vh white;
     color:black;
     Font-size:27px;    
@@ -124,7 +125,7 @@ height: 100%;
    grid-template-columns: 3fr 2fr 1fr;
    grid-gap: 9px;
    position: absolute;
-   bottom: 40%;
+   top: 84svh;
    button{
        color:white;
        border:solid 2px #7b55ff;
