@@ -8,7 +8,7 @@
  }
 body{
     width: 100%;
-    height: 130svh;
+    height:1300px;
     position: absolute;
     top: 0%;
     overflow:hidden ;   
@@ -125,7 +125,7 @@ height: 90svh;
    grid-template-columns: 3fr 2fr 1fr;
    grid-gap: 9px;
    position: absolute;
-   top: 84svh;
+   top: 100svh;
    button{
        color:white;
        border:solid 2px #7b55ff;
