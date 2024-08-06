@@ -123,9 +123,8 @@ height: 100%;
    display: grid;
    grid-template-columns: 3fr 2fr 1fr;
    grid-gap: 9px;
-   margin: 14px 9px;
    position: absolute;
-   bottom: 4%;
+   bottom: 15%;
    button{
        color:white;
        border:solid 2px #7b55ff;
@@ -162,7 +161,7 @@ height: 100%;
 }/*------------ collections part end----------*/
 .visiblity{
     width: 100%;
-    height: 100%;
+    height: 90%;
    }
 
      
