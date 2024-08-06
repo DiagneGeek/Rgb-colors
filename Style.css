@@ -124,7 +124,7 @@ height: 100%;
    grid-template-columns: 3fr 2fr 1fr;
    grid-gap: 9px;
    position: absolute;
-   bottom: 15%;
+   bottom: 40%;
    button{
        color:white;
        border:solid 2px #7b55ff;
