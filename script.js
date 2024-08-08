@@ -14,7 +14,8 @@ const [
 const firstState = () => {
    linkBar.style.left = links[0].offsetLeft+"px";
    linkBar.style.width = links[0].offsetWidth+"px";
-}firstState();
+}
+firstState();
 
 generateBtn.addEventListener("click", () => {
    let r = Math.floor(Math.random() * 256);
