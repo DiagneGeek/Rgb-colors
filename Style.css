@@ -128,7 +128,7 @@ position:relative;
        color:white;
        border:solid 2px #7b55ff;
        border-radius: 6px;
-       height: 80px;
+       height: 13svh;
    }
    .generate-btn{
      background: linear-gradient(to right,#236bd3,#9112d3);
@@ -199,5 +199,5 @@ position:relative;
     width:100%;
     height:20svh;
     padding:20px;
-    background:linear-gradient(blue,purple,red);
+    background:linear-gradient(blue,purple,white);
 }
