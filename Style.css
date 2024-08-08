@@ -42,7 +42,7 @@ body{
     Font-size:18px;
     background:white;
     width: 100%;
-    height: 10svh;
+    height: 9svh;
     box-shadow:0.4vh 0.5vh 0.9vh ;
     position: relative;
     z-index:9;    
@@ -151,7 +151,7 @@ position:relative;
     height: 0%;
     background: white;
     position: absolute;
-    top: 10%;
+    top: 29svh;
     right: 0%;
    
     transition:0.5s ease-in-out ;
@@ -159,7 +159,7 @@ position:relative;
 }/*------------ collections part end----------*/
 .visiblity{
     width: 100%;
-    height: 90%;
+    height: 91svh;
    }
 
      
