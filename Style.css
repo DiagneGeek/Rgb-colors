@@ -42,7 +42,7 @@ body{
     Font-size:18px;
     background:white;
     width: 100%;
-    height: 10%;
+    height: 10svh;
     box-shadow:0.4vh 0.5vh 0.9vh ;
     position: relative;
     z-index:9;    
