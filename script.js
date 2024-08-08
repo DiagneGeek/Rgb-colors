@@ -12,8 +12,8 @@ const [
  ]
 
 const firstState = () => {
-   linkBar[0].style.left = linkBar[0].offsetLeft+"px";
-   linkBar[0].style.width = linkBar[0].offsetWidth+"px";
+   linkBar.style.left = links[0].offsetLeft+"px";
+   linkBar.style.width = links[0].offsetWidth+"px";
 }firstState();
 
 generateBtn.addEventListener("click", () => {
