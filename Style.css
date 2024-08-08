@@ -8,6 +8,7 @@
  }
 body{
     width: 100%;
+    height:120svh;
     background:#1a1a1a;
     font-family:inter;
     &::before{
@@ -198,5 +199,5 @@ position:relative;
     width:100%;
     height:20svh;
     padding:20px;
-    background:linear-gradient(blue,purple,gray);
+    background:linear-gradient(blue,purple,green);
 }
