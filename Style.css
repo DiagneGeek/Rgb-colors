@@ -189,3 +189,14 @@ height: 90svh;
     background: #2080be;
     opacity:0;
      }
+
+
+
+
+
+.ads{
+    width:100%;
+    height:30svh;
+    padding:20px;
+    background:linear-gradient(blue,purple,red);
+}
