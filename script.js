@@ -11,6 +11,11 @@ const [
  document.querySelector(".collections-btn") 
  ]
 
+const firstState = () => {
+   linkBar[0].style.left = linkBar[0].offsetLeft+"px";
+   linkBar[0].style.width = linkBar[0].offsetWidth+"px";
+}firstState();
+
 generateBtn.addEventListener("click", () => {
    let r = Math.floor(Math.random() * 256);
    let g = Math.floor(Math.random() * 256);
