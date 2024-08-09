@@ -1,7 +1,9 @@
 let canvas = document.querySelector(".canvas");
 let linkBar=document.querySelector(".scroll-indicator")
 let links = document.querySelectorAll(".links button");
-let generateBtn = document.querySelector(".generate-btn")
+let generateBtn = document.querySelector(".generate-btn");
+
+let test = "savoir comment upload mon github";
 
 const [
  collectionsContainer,
