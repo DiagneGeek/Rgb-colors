@@ -8,6 +8,7 @@
  }
 body{
     width: 100%;
+    overflow-x: hidden;
     background:#1a1a1a;
     font-family:inter;
     &::before{
@@ -151,13 +152,34 @@ position:relative;
     height: 0%;
     background: white;
     position: absolute;
+    right: 0;
     top:9svh;
-    right: 0%;
-   
-    transition:0.5s ease-in-out ;
+    display: none;
+    transition:0.5s ease;
+
+    .noCollectionMessage{
+       color:rgb(120,112,112);
+       text-align:center;
+       translate:0 33svh ;
+       transition:0.3s ;
+    }
+    .addCollectionBtn{
+        width:08vh;
+        height:8vh;
+        border-radius:50%;
+        font-size: 5vh;
+        color:white;
+        font-weight: 400;
+        position: absolute;
+        bottom: 5svh;
+        box-shadow:0.4vh 0.5vh 0.9vh linear-gradient(yellow,green,blue);
+        background-image: linear-gradient(red, blue, purple);
+    }
    
 }/*------------ collections part end----------*/
 .visiblity{
+    display: flex;
+    flex-wrap:wrap;
     width: 100%;
     height: 91svh;
    }
