@@ -8,7 +8,6 @@
  }
 body{
     width: 100%;
-    height:120svh;
     background:#1a1a1a;
     font-family:inter;
     &::before{
@@ -94,7 +93,7 @@ body{
 .generate 
 {/* --------- generate part ----------- */
 width: 100%;
-min-height: 100svh;
+min-height: 91svh;
 position:relative;
 .canvas{
     width: 100%;
@@ -123,7 +122,7 @@ position:relative;
    grid-template-columns: 3fr 2fr 1fr;
    grid-gap: 9px;
    position: absolute;
-   bottom:9svh;
+   bottom:3svh;
    button{
        color:white;
        border:solid 2px #7b55ff;
