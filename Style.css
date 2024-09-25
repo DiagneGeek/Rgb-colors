@@ -212,23 +212,14 @@ position:relative;
     opacity:0;
      }
 
-.generate_manualy{
-   text-align:center;
-    background:white;
-    height:150px;
-    input{
-        margin:10px auto;
-        border:solid 2px red;
-        border-radius:5px;
-    }
-    .previewColor{
-        width:300px;
-        heigh:300px;
-        display:inline-block;
-        background:rgba(77,125,140)
-    }
+function generateManualy(color,box) {
+  color.oninput = () => {
+     box.style.background = `rgb(${color.value})`;
+  }
+  
 }
 
+generateManualy(document.querySelector(".generate_manualy  input"),document.querySelector(".generate_manualy .previewColor"))
 
 
 
