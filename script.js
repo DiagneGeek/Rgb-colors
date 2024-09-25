@@ -66,7 +66,7 @@ function generateManualy(color,box) {
   }
 }
 
-generateManualy(document.querySelector(".generate_manualy input),document.querySelector(".generate_manualy .previewColor"))
+generateManualy(document.querySelector(".generate_manualy input"),document.querySelector(".generate_manualy .previewColor"))
 
 /* a faire: */
 /* mettre en place le système de collection*/
