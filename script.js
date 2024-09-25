@@ -60,5 +60,13 @@ links.forEach(link => {
   }
 })
 
+function generateManualy(color,box) {
+  color.oninput = () => {
+     box.style.background = `rgb(color.value)`
+  }
+}
+
+generateManualy(document.querySelector(".generate_manualy input),document.querySelector(".generate_manualy .previewColor"))
+
 /* a faire: */
 /* mettre en place le système de collection*/
