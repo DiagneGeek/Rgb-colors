@@ -62,7 +62,7 @@ links.forEach(link => {
 
 function generateManualy(color,box) {
   color.oninput = () => {
-     box.style.background = `rgb(color.value)`
+     box.style.background = `rgb(${color.value})`
   }
 }
 
