@@ -212,6 +212,20 @@ position:relative;
     opacity:0;
      }
 
+.generate_manualy{
+   text-align:center;
+    input{
+        margin:10px auto;
+        border:solid 2px red;
+        border-radius:5px;
+    }
+    .previewColor{
+        width:300px;
+        heigh:300px;
+        display:inline-block;
+    }
+}
+
 
 
 
