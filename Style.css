@@ -214,6 +214,8 @@ position:relative;
 
 .generate_manualy{
    text-align:center;
+    background:white;
+    height:150px;
     input{
         margin:10px auto;
         border:solid 2px red;
@@ -223,6 +225,7 @@ position:relative;
         width:300px;
         heigh:300px;
         display:inline-block;
+        
     }
 }
 
