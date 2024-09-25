@@ -215,7 +215,7 @@ position:relative;
   .generate_manualy{
    text-align:center;
     background:white;
-    height:150px;
+    padding:40px 0;
     p{
       
       background: linear-gradient(to right,#39a1e2,#50c843,#c82a21);
@@ -223,6 +223,7 @@ position:relative;
       color: transparent;
       width:fit-content;
       display: inline-block;   
+      
       }
     input{
         margin:10px auto;
