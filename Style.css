@@ -175,6 +175,7 @@ position:relative;
         bottom: 5svh;
         box-shadow:0.4vh 0.5vh 0.9vh linear-gradient(yellow,green,blue);
         background-image: linear-gradient(red, blue, purple);
+        margin-left: 20px;
     }
    
 }/*------------ collections part end----------*/
