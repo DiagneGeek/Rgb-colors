@@ -162,6 +162,7 @@ position:relative;
        text-align:center;
        translate:0 33svh ;
        transition:0.3s ;
+       width: 100%;
     }
     .addCollectionBtn{
         width:08vh;
