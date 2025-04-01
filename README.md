@@ -1,4 +1,6 @@
-This is an app which generate colors 
-randomry and it save the colors in 
-a collection for that you can use 
-them. it is made with html css and js
+# Colorfulwwworld 
+## A world more colorful!!
+
+## What is it ??
+Colorfulwwworld is a website that allow anybody who want to find colors (artist, developer
+...) to generate, compare and mutes between multiple types of colors.
