@@ -55,7 +55,6 @@ const validCssPropName = (name) => ({
     }
     
     value = replaceAll(value, '_', ' ').trim()
-    if(value.includes('ok')) console.log(value)
     
     if (value.includes('(this.childLen)')) {
       value = value.replace('(this.childLen)', el.children.length)
