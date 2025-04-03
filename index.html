@@ -1,15 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ColorfulWWWorld</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>colorfulwwworld</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Montserrat:ital,wght@1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Smooch+Sans:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+    
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      border: none;
+      outline: none;
+      box-sizing: border-box;
+      text-decoration: none;
+    }
+  </style>
 </head>
-<body>
-    <div di-style="">hi</div>
-    <script type="module">
-        import {diagne} from "./assets/diCss.js"
-        diagne.init()
-    </script>
+
+<body di-style="bg:[back] min-h:full">
+  <div di-style="py:20px shadow txt-a:center fw:800 fs:20px">
+    Colorfulwwworld
+  </div>
+  <header 
+  di-style="flex items:center flex-d:col mt:5vw md&display:block">
+    <h1 di-style="tc:[contrast] txt-a:center fs:2.5rem m:100px_auto mb:30px ff:Boldonse,fantasy ls:3px md&w:400px md&m:100px_10px">
+      A WWW.orld More Colorful</h1>
+    <p di-style="tc:[text] txt-a:center max-w:300px w:70% max-w:350px">
+      Colorfulwwworld is the perfect tool to create, explore and test multiples colors for your website.
+    </p>
+    <div di-style="flex my:10vw gap:19px h:100px">
+    <a class="feature" 
+    di-style="scale:1.1 translate:20px_50px bg:[primary] bord-c:[text] bord-w:1.5px">
+      test
+      </a>
+      <a class="feature" di-style="scale:1.2 bord-w:2px bg:linear(45deg,blue,purple) translate:20px">
+        Discover
+      </a>
+      <a class="feature" 
+      di-style="bg:oklch(0.646_0.222_41.116) align-self:flex-end">
+        Generate
+      </a>
+      
+  </header>
+  
+  <script type='module'>
+    import dgCss from './lib/dgcss.js'
+    
+    dgCss.init({
+      variables: {
+        primary: "oklch(0.554_0.046_257.417)",
+        contrast: "oklch(0.372 0.044 257.287)",
+        back: 'oklch(0.968 0.007 247.896)',
+        text: 'oklch(0.707 0.022 261.325)'
+      },
+      globals: {
+        '.feature':"p:10px px:25px radius:9px border tc:white h:40px"
+      }
+    })
+  </script>
 </body>
+
 </html>
