@@ -21,15 +21,15 @@
 </head>
 
 <body di-style="bg:[back] min-h:full">
-  <div di-style="py:20px shadow txt-a:center fw:800 fs:20px">
-    Colorfulwwworld
+  <div di-style="py:4px border flex center fw:900 fs:20px backdrop-filter:blur(18vw) h:8svh tc:[primary]">
+    <p di-style="fw:900 ff:Boldonce,sans-serif">Colorfulwwworld</p>
   </div>
   <header 
-  di-style="flex items:center flex-d:col mt:5vw">
-    <h1 di-style="tc:[contrast] txt-a:center fs:2.5rem m:100px_auto mb:30px ff:Boldonse,fantasy ls:3px md&w:760px">
+  di-style="flex items:center flex-d:col h:92svh backdrop-filter:blur(30px) bg:linear(45deg,transparent,rgb(100,100,100,0.2))">
+    <h1 di-style="tc:[contrast] txt-a:center fs:2.5rem m:10rem_auto mb:30px ff:Boldonse,fantasy ls:3px">
       A WWW.orld More Colorful</h1>
-    <p di-style="tc:[text] txt-a:center max-w:300px w:70% max-w:350px my:6vw">
-      Colorfulwwworld is the perfect tool to create, explore and test multiples colors for your website.
+    <p di-style="tc:[text] txt-a:center max-w:300px w:70% max-w:350px my:3vw">
+      Colorfulwwworld is the perfect tool to create, explore, convert and test multiples colors for your website.
     </p>
     <div di-style="flex my:4vw gap:19px h:100px">
     <a class="feature" 
@@ -46,22 +46,58 @@
       
   </header>
   
+  <div di-style="$:bubble bg:[first] top:40% left:20%"></div>
+  <div di-style="$:bubble bg:[sec] top:20% right:10%"></div>
+  <div di-style="$:bubble bg:[third] pos-b:15% right:48%"></div>
+  <div di-style="$:bubble bg:[main] pos-t:60px right:50% w:80% h:13svh translt:50% filter:blur(60px) max-w:600px"></div>
+  
   <script type='module'>
-    import dgCss from './lib/dgcss.js'
+    import {init, update} from './lib/dgcss.js'
     
-    dgCss.init({
+    init({
       variables: {
         primary: "oklch(0.554_0.046_257.417)",
         contrast: "oklch(0.372 0.044 257.287)",
         back: 'oklch(0.968 0.007 247.896)',
-        text: 'oklch(0.707 0.022 261.325)'
+        text: 'oklch(0.707 0.022 261.325)',
+        // bubbles
+        main: "rgb(85, 170,255)",
+        first: "rgb(200 ,59, 79)",
+        sec: "rgb(15,90,56)",
+        third: "rgb(100,240,90)"
       },
       globals: {
        '.feature':"p:10px px:25px radius:9px border tc:white h:40px",
         "p": 'fw:400 ff:Ubuntu',
         "button": 'fw:500 ff:Ubuntu'
+      },
+      snippets: {
+        bubble: "pos:absolute size:100px z-index:-1 radius:50% transition:0.6s_ease-in"
       }
     })
+    
+    const randomRgb = () => {
+      const r = Math.round(Math.random() * 255)
+      const g = Math.round(Math.random() * 255)
+      const b = Math.round(Math.random() * 255)
+      return `rgb(${r},${g},${b})`
+    }
+    setInterval(() => {
+      update("first", randomRgb())
+    },1000)
+    
+    setInterval(() => {
+      update("sec", randomRgb())
+    },1300)
+    
+    setInterval(() => {
+      update("third", randomRgb())
+    },2500)
+    
+    setInterval(() => {
+      update("main", randomRgb())
+    },3000)
+    
   </script>
 </body>
 
